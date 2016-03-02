@@ -1,0 +1,34 @@
+{
+  "name": "palantirnet/palantir-behat-extension",
+  "description": "Additional step definitions for testing Drupal sites using Behat.",
+  "type": "behat-extension",
+  "keywords": [
+    "behat",
+    "drupal"
+  ],
+  "homepage": "https://github.com/palantirnet/butler",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Palantir.net",
+      "email": "byrwa@palantir.net",
+      "homepage": "https://palantir.net",
+      "role": "Company"
+    },
+    {
+      "name": "Lauren Byrwa",
+      "email": "byrwa@palantir.net",
+      "role": "Developer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packagist.drupal-composer.org/"
+    }
+  ],
+  "scripts" : {
+    "pre-install-cmd": "gem install bundler",
+    "post-install-cmd": "printf 'n' | sh fed-init.sh"
+  }
+}
